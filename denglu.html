@@ -1,0 +1,43 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+        <meta id="viewport" name="viewport" content="width=device-width,minimum-scale=1,maximum-scale=1,user-scalable=1">
+    <meta name="apple-mobile-web-app-title" content="">
+     <link rel="apple-touch-icon-precomposed" href="timg.jpg">
+     <meta name="apple-mobile-web-app-capable" content="yes">
+<script>
+    window.onload = window.onresize = function(){        
+        var view_width = document.getElementsByTagName('html')[0].getBoundingClientRect().width;
+        //找到标签名为html的第一个
+        var _html = document.getElementsByTagName('html')[0];
+        //如果屏幕宽度大于640 
+        //就用 640/16=40
+        //小于640的时候 不确定 也是尺寸/40
+        view_width>640?_html.style.fontSize = 640 / 16 + 'px':_html.style.fontSize = view_width / 16 + 'px';
+        //最大网页尺寸640 
+        //最大字体（根字体大小） 40
+    }
+</script>
+
+<link rel="stylesheet" href="css/gonggong.css">
+<link rel="stylesheet" href="css/style1.css">
+<link rel="stylesheet" href="font/iconfont.css">
+</head>
+<body>
+    <header>
+        <img src="images/logo.png" height="91" width="252" alt="">
+    </header>
+    <div class="connet">
+     <p> <i class="iconfont">&#xe620;</i><input type="text" value="E-mail address"></p>
+      <p> <i class="iconfont">&#xe620;</i> <input type="password" value="1646546412"></p>
+      <button>login</button>
+      <p class="p1">Fllowrs password</p>
+    </div>
+
+    <div class="footer">
+        <img src="images/dibu.png" height="200" width="640" alt="">
+    </div>
+</body>
+</html>

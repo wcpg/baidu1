@@ -1,0 +1,110 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/gonggong.css">
+    <link rel="stylesheet" href="font/iconfont.css">
+    <meta id="viewport" name="viewport" content="width=device-width,minimum-scale=1,maximum-scale=1,user-scalable=1">
+    <meta name="apple-mobile-web-app-title" content="">
+     <link rel="apple-touch-icon-precomposed" href="timg.jpg">
+     <meta name="apple-mobile-web-app-capable" content="yes">
+<script>
+    window.onload = window.onresize = function(){        
+        var view_width = document.getElementsByTagName('html')[0].getBoundingClientRect().width;
+        //找到标签名为html的第一个
+        var _html = document.getElementsByTagName('html')[0];
+        //如果屏幕宽度大于640 
+        //就用 640/16=40
+        //小于640的时候 不确定 也是尺寸/40
+        view_width>640?_html.style.fontSize = 640 / 16 + 'px':_html.style.fontSize = view_width / 16 + 'px';
+        //最大网页尺寸640 
+        //最大字体（根字体大小） 40
+    }
+</script>
+
+
+</head>
+<body>
+    <header>
+        <a href="#"><span class="iconfont">&#xe624;</span></a>  <h5>@Ajessdsvf</h5>
+    </header>
+    <div class="banner">
+        <img src="images/banner.png"  alt="" class="img">
+        <p><img src="images/img.png"  alt=""></p>
+    </div>
+    <div class="connet">
+        <ul>
+            <li>
+               <p> Follower</p>
+               <p>4017</p>
+            </li>
+              <li>
+               <p> Follower</p>
+               <p>4017</p>
+            </li>
+              <li>
+               <p> Follower</p>
+               <p>4017</p>
+            </li>
+        </ul>
+        <span>fllowrs</span>
+    </div>
+
+    <div class="main">
+        <ul>
+            <li>
+                <img src="images/img2.png"  alt="">
+            </li>
+              <li>
+                <img src="images/img2.png"  alt="">
+            </li>
+              <li>
+                <img src="images/img2.png"  alt="">
+            </li>
+
+              <li>
+                <img src="images/img2.png"  alt="">
+            </li>
+              <li>
+                <img src="images/img2.png"  alt="">
+            </li>
+              <li>
+                <img src="images/img2.png"  alt="">
+            </li>
+        </ul>
+    </div>
+<div class="main">
+        <ul>
+            <li>
+                <img src="images/img2.png"  alt="">
+            </li>
+              <li>
+                <img src="images/img2.png"  alt="">
+            </li>
+              <li>
+                <img src="images/img2.png"  alt="">
+            </li>
+
+              <li>
+                <img src="images/img2.png"  alt="">
+            </li>
+              <li>
+                <img src="images/img2.png"  alt="">
+            </li>
+              <li>
+                <img src="images/img2.png"  alt="">
+            </li>
+        </ul>
+    </div>
+    <div class="footer">
+        <a href="#" class="iconfont">&#xe620;</a>
+        <a href="#" class="iconfont">&#xe609;</a>
+        <a href="#" class="iconfont">&#xe647;</a>
+        <a href="#" class="iconfont">&#xe60a;</a>
+        <a href="#" class="iconfont">&#xe605;</a>
+        <a href="#" class="iconfont">&#xe60b;</a>
+    </div>
+</body>
+</html>
